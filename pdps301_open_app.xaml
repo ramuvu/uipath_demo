@@ -1,0 +1,109 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test_demo" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="568,892" sap2010:WorkflowViewState.IdRef="Test_demo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,827" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Entertainment Partners Menu" sap:VirtualizedContainerService.HintSize="434,735" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="cbcfe1cc-ce6d-49ab-af32-f66604744542" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,446" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Transactions'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="689, 31, 80, 19" FriendlyName="'Transactions'" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='Transactions' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='Transactions' role='menu item' automationid='' check:text='Transactions' /&gt;" Guid="89b780d7-4f19-4bfc-aad6-1912c36de4d3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAXCAYAAACVp2gDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFWSURBVFhH7ZXhsYQgDITtx9qsgzbSBmXYhV3kkQAeKBzq7by7H/lmuDmRhGWNcWIDihkKxgwFY4aCMUPBmKFgzFAwlwxdaeFlOQ/nt7Tix9g8u8XxN+TdrNCV6UtC3/M7usxQMB8aGq+JXGgBFK7CTNkeSGaEFOep0S429u4Vk0PaeYTjesl9XHvQqS2gjEnzD3SNABja66Xl2rhuN2aVA8QHoP/fqi3zxEOe92vpqvfet6j66ye62kAqtDqfispPthTeiUvVczKplUfXpgNXjPLXMVL90asHugZgDa3ESzXle4O4wOalbaSD9vL8p6GJStcFsIZKVTkfLAjoQfK9sXBBxGtFdPOgXvls8E1dFwC/8kUjd8R0pUKrV7usylYeQWLz+pdR+0dMJw77qYk5pqNDGekac9NQY4QZCsYMBWOGgpnmeWYbuDEF5McGbjQnbTwaE/8BMoA6T/0GBYoAAAAASUVORK5CYII=" InformativeScreenshot="57ea9fe6877a7c7759feeb7322d02435.png" ScopeSelectorArgument="&lt;wnd app='epmenu.exe' cls='EPMenu' title='Entertainment Partners Menu' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click '(pdps301) Payroll'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="3, 91, 369, 22" FriendlyName="'(pdps301) Payroll'" FullSelectorArgument="&lt;ctrl name='Transactions' role='popup menu' /&gt;&lt;ctrl automationid='1910' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Transactions' role='popup menu' /&gt;&lt;ctrl automationid='1910' role='menu item' check:text='(pdps301) Payroll Invoice Entry' /&gt;" Guid="5110a5dd-c3f6-4603-92e1-4af39bae8494" ImageBase64="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" InformativeScreenshot="919c4c215cfdd0c0fbad72841fe53835.png" ScopeSelectorArgument="&lt;wnd app='epmenu.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\EP\BIN32\epmenu.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ9SURBVFhH7ZfbU1tVFMYzffDF6av/gDP+Fb5jbbWWcmmh15RWqTN0KgUBgZJA7gGaBqiU0BAuIRACxWq1WF9rIfWhT/pU3/AFyO3k5Aqfa52TyymelItOfNA9880+7L3Z32+tvc7JOZr/27/eLHZHp67PjHKqz2jTkfVbpCMak8W289urdbz89XfSq39Un7U7VHuGIPN3JAizdUD8eTWIv6PVtRdYC/6CtReyVun6OY2x1NbnAN4lva2hdIixeALpVBKpZOIQkv8vqaLda9lDTGXyAO+RjhKAVeTBcuovAJlsVppYWXmGpz+93JdWfnyGbCYtKRgMqiof+fvXJyTxtSpANgfAG1d1LaC624+annnU6udwxuDDWZMP9TYv6vtncN4xhQvOSWntH+vrSCXiBaNSOhDAZfMytNaH0NqW0DCwiKuOAK45F/DpyDwaR+dw3eXD5+5ZBYCgGj1rXwD8x7YCoMn5HZqGv8WNe49w8z7JtYxm90Pc8iyhZXoRrd4A2ub8BYA0AfDGyaQo9wm5V4rNK3qHpWtVAEGUJ3jTtvEn6HD/gA7P9+icfowvyPyG24/GcS+ujLmhdY2jYcJVBBDjqtGz8gBsfuqerTRAVBALAHrvU9yeeYKGIR9OmsfwgXEIH1rv4kS/Ax/dGcRJZz9OjdgUALkMUOTS7cf9riywef1Mz/4Amh98gxOGUVT0DeOY2YnjNjIfuIOP7w7gk2G7tNnp+xYFQEw1elYegM0bHzeVBogpACr0I3LUFjIvRE3mI3ZUfm3F6TEzqh8YiwBUA0l6GCXoKPKGu8XmbwaIFwGOmXIp56gdZD5EKaeoK0ctqHKZUOM24IyntwCQoiNQi551AAB5gjc9bqeoBxUp56gp5dXjJtRO9OHspB51lNICQFw40GN8TwBloVWOWlFFKa+hlNd6yHxKR+d5G+d9XUUAOgK16FmHAlAWWnU+5ZO9qJvuwTlvNy7MdeKSv/01gFTuDlAz3K09AZSFJqV8Si9HPduFi/Nf4dJCO7SLrQWABNUAF6DaA4jHRJqLRqMIh8OIhEN7AygLrW5aR1Fzyjtx0d+By4E2XFlqRcPyrQJA8g23YTJB+xJgJBJGKBRCOLRVAkDxJFQW2rlZTjlFTSnXBr4k8xZcXW7GtUc3FQBR1ejzGYhTkXLkm5ub2NraVAeIi/KLwuTUorTxfjThCchHQAZq0bPigoBYNELGWzIASRUgEpMzwL/tvOlBFI8VM8A914MgxBClcT53jnpjY0NSSYBQNAH+ScZ2CumkACANZGksFUeGhO0kje2Qtkm0jueRwk5GLjI2ls1FCJSRGJlHKfIwnT2ff16cjZIAPFEuvQbA7+jdOkOCBw+jXqMVRosdFvsgTNZBGEw26FXWKdXc0j5E5vJbMTX+QOB3dB5gqnKIveTvAmpHchdMc7RMYi/5y+g/3jSaPwH2G61IeD/6MgAAAABJRU5ErkJggg==" InformativeScreenshot="ead75d3b6cf3ffa8967b4b7ec47faadb.png" Selector="&lt;wnd app='epmenu.exe' cls='EPMenu' title='Entertainment Partners Menu'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

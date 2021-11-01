@@ -1,0 +1,295 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="pdps301" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="788,4402" sap2010:WorkflowViewState.IdRef="pdps301_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="pdps301" sap:VirtualizedContainerService.HintSize="798,4337" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="batchNumber" />
+      <Variable x:TypeArguments="x:String" Name="dt" />
+      <Variable x:TypeArguments="x:String" Name="multiple" />
+      <Variable x:TypeArguments="x:String" Default="This client has multiple billing states" Name="text" />
+      <Variable x:TypeArguments="x:String" Name="clientNumber">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">71241</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="rand" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Payroll Invoice Entry - ADD          " sap:VirtualizedContainerService.HintSize="756,4245" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="722,3956" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Client'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="680,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[clientNumber]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="70, 78, 54, 16" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd aaname='Prod Title' cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Prod Title' cls='Edit' /&gt;" Guid="04d33ffd-c016-4603-a40f-514c4e1da045" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAUCAYAAADcHS5uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABRSURBVFhH7ZHBCQAwCAM7rPvjBpZC9ZUFEhO4j9zn8NRfREjSm1D17fvoO2amFA5FMjMORTIzDkUyMw5FMjMORTIzDkUyMw5VpDeh6lsSWnUB9i01uxTL25wAAAAASUVORK5CYII=" InformativeScreenshot="734694f3b278bb38d86c298926a05406.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='Pdps301' title='Payroll Invoice Entry - ADD          ' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="21, 80, 54, 11" ElementType="Text" FriendlyName="'Client'" FullSelectorArgument="&lt;wnd cls='Static' title='Client' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Client' check:text='Client' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAPCAYAAAC1DNw2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVEhL7ZNBDoAgDAT7WP4ffoD2UEOarhRECcgkG6G06ByktBAhBJjlRGOMZv4rSkRXcqyagOq1PL3HLWrJ5fQSQgwT1aBzq841iSBrq67TwueiaM/P/Kw0V8sQUR2p55T2tbz+j/bqQ3NehovK3tvXiluU4ZdJNOhDUK++R/fdzbVQJTozW/TMFp0RLBrTAc/qeRIP/RztAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="680,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(tab)][u(hk)]" />
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Pdps301'" sap:VirtualizedContainerService.HintSize="680,662" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Version="V1">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,446" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'CBS STUDIO - GUARDS CA'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="106, 55, 416, 13" FriendlyName="'CBS STUDIO - GUARDS CA'" FullSelectorArgument="&lt;wnd ctrlid='508' /&gt;&lt;ctrl name='CBS STUDIO - GUARDS             CA          ' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='508' /&gt;&lt;ctrl name='CBS STUDIO - GUARDS             CA          ' role='list item' automationid='' check:text='CBS STUDIO - GUARDS             CA' /&gt;" Guid="2ac4897b-889d-4d02-94c1-19e17a84e630" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZ4AAAARCAYAAADt7cq2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKiSURBVHhe7ZlPijJBDMU9hhfw38lU8EiKXsyFCxduXAguRLSGNBSEUKmkutqxpd8PHpm8pLp6SEN99c3ocDgECIIgCGqr/X7faLfbhe12G8bjcRiNRrpo0Xq9hiAIgqDWWq1WYblcNnIfPAQZiIiIiIiIJfH9fjfx+Xw20X3wUAIAAACUQgfP6/VqDp7H41F245HI5oj0ozhW3SK3PlWLknUr5z6ntOcb8P35O0hP5pGUR/B+rkiuFvH0gH5jzU/zwfBoffBQwpE5wb1cPVUjNF9ired1z89EaR7x+lrfp0jtxz3v+5X43ueXPBP0k9SsvB4YHp3ceKhgkeqJnmd9jpL1Wq/0rZyo8QjN7xrPPrKn9J1TPvdyde2Z4DcomR9mDQh58Mxms7BYLBrN5/MmJ02n0zCZTNI3Hs/HlOqJXu3HWLJe65W+lRM1HqH5XePZR/bkfo9cjcO90ueB38E7P8wbROTBs9lswv1+D7fbLVyv13C5XML5fA6n0ykcj8e6G48Ux6pbeNd7fSsnajxC87vGs4/syf0eWk2KI3OCe3xdFPgNvLOKfZgtaH3w8I/H8yGleqx1tR9oyZ7St3KixiM0X0J9mjzIvtT6VA+nJJc1wutxrDroB545yR7Mdtj8641HYq2r/ThL9pS+lRM1HqH5XePZX/akcikOz2WN8Hocqw76gWdO1CMFhksnNx4i9SFxL1dP1QjNl5Ss9/aW5pG2z/80qf24Z73fJ3NZi2g+6B+pWeVmjNkOm05uPBH6mLgi0o/iWHULz/pcjdDq3E/VidKeb8D3T72DVpO+lRNanfscTw/oN9r8pCdzMDw6u/EAAAAAHqpuPPxfMIiIiIiIiJ5IBw9FOngoVv1XGwAAAGDR6d94AAAAAIuyg+cY/gB1Ast8ZeD32QAAAABJRU5ErkJggg==" InformativeScreenshot="177693c26b1312de3f6ffea261d3d3b6.png" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='#32770' title='Pdps301' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="18, 131, 72, 28" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='Done' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='Done' check:text='unchecked' /&gt;" Guid="6cf52813-41ae-44c7-87e2-33d21f6cfa80" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAgCAYAAAC4oZ4KAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADASURBVGhD7dLBDcMgDIVhhuXCVuzGAmyQKlJpKzDUr6TBSl6k74Dt06+4nPNGegwGegXz3tOAGIxf+4UQxsFSSvQUY9QFK7O7YzAQg4EYDMRgoFODOedE0q1VS4J9m1m2PNhobpHZYGWm2dV76abe/8pksH+/Z1w6WK3sZ9ziDzsSg4GWB9PMjn7PWBKsprmVdr3350zazTg12BUwGIjBQAwGYjAQg4EYDKQKth/R2zDYvqRWNxj1NcFIh8EgeXsAw7ig0Oqy21sAAAAASUVORK5CYII=" InformativeScreenshot="e31a0ea8f356c8a0833a8a0db3c11592.png" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='#32770' title='Pdps301' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 518, 240" FriendlyName="'Pdps301'" Guid="69e79bb0-5d17-4bd2-a3d7-322128bd35e4" ImageBase64="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" InformativeScreenshot="a0456e21166d223c2a611b4d9db7c57f.png" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='#32770' title='Pdps301' /&gt;" SearchSteps="Selector, FuzzySelector">
+                  <uix:TargetAnchorable.FuzzySelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </uix:TargetAnchorable.FuzzySelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="680,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(tab)][u(hk)][d(hk)][k(tab)][u(hk)][d(hk)][k(tab)][u(hk)][d(hk)][k(tab)][u(hk)]" Version="V1" />
+            <Assign sap:VirtualizedContainerService.HintSize="680,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[dt]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[system.DateTime.Now.AddDays(-1).ToString("MM/dd/yy-hh:ss")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NSelectItem DisplayName="Select Item 'Total Reg. Vouchers'" sap:VirtualizedContainerService.HintSize="680,156" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="G Payroll received             " ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Version="V1">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String xml:space="preserve">                               </x:String>
+                  <x:String>E Batch submitted to data entry</x:String>
+                  <x:String xml:space="preserve">G Payroll received             </x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="21, 337, 213, 19" ElementType="DropDown" FriendlyName="'G Payroll received'" FullSelectorArgument="&lt;wnd aaname='Batch Actions' cls='ComboBox' /&gt;&lt;ctrl name='Batch Actions' role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Batch Actions' cls='ComboBox' /&gt;&lt;ctrl name='Batch Actions' role='combo box' automationid='' /&gt;" Guid="d481ee82-974a-44f2-a79a-1644805baa02" InformativeScreenshot="0c7eee13f12d3f8b0790c412d5fd6d8b.png" IsResponsive="True" NativeTextArgument="G Payroll received" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='Pdps301' title='Payroll Invoice Entry - ADD          ' /&gt;" SearchSteps="Selector, FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="21, 303, 114, 11" ElementType="Text" FriendlyName="'Total Reg. Vouchers'" FullSelectorArgument="&lt;wnd cls='Static' title='Total Reg. Vouchers' /&gt;&lt;ctrl name='Total Reg. Vouchers' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Total Reg. Vouchers' /&gt;&lt;ctrl name='Total Reg. Vouchers' role='text' automationid='' check:text='Total Reg. Vouchers' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAAPCAYAAAAxijsYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEiSURBVFhH7ZKBqoUwDEP9/5/2voKB2CW9Tubg7XpgaLM0Zc5tf1mS92IX5b3YRTld7LZtzbrCVV/Qm8trFnnW6NkzziIn9A5+yp99Mz5I8PTcGeeQE9Tg0LAAa9VeRmmK7OMa2cqj9B5UJlD5d/1ZD6CxjvesB9Aa/XieUM3M6Nrh+nr1Xnrz7+i8N9ofnHcOqobgWx2ExotRfoXLyDr28AS57kFluvyrOqj8eUFnuGYf0yp/VEHB6Nrh+lz/3TkKNcvlP6UDpzNN5vE84QaD0bXD9VV58c6LyXUFvNzj8mbrwPkD2aGCQsNS5D32sx7k2lH1IbfKqvqvoPyYqbLVntOYXj+j/IHv+Ic0hys+yOosd3L3B/8av336hXkvdkn2/QOUfNJ/Df+jDQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, TextNative" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'On'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="680,216" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="Simulate" ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Text="[dt]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="261, 339, 90, 16" ElementType="InputBox" FriendlyName="'10/10/21-10:10'" FullSelectorArgument="&lt;wnd aaname='On' cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='On' cls='Edit' /&gt;" Guid="7ee77fbf-fd4c-459e-978d-6c6b0eea3d08" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAUCAYAAAAEEYpkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEYSURBVFhH7ZLRCoUwDEP9WP8f/8BLHyq5Ia3bdO6lhcPWposQ3M6qJVXBL6or+H3fiw/w+gv+OI5iIhX8IpqD37ZNzhzWXG+d9fhk+5FHROQR+Uf0+jQFrx5jH5mrN2qW6T5Xd6Wp9xFqf8RvxOc2eH/Qaxz12Z7dMz3r+bwj2sfe7nd+oz5Nf7wRGfPJOvOWj6G0bF8RfY9P1plenynB8y4yyyeaW4+g5rrq+WSd6fV5FDzOojvzhk80NzJNwfvW46zVr9dnOHie+V3tIU99Rvwz1D7OWI/8e31ug7cHjNJw5ncEdx2l4czvCO462Twi21cz1LhnlIZvjOY/vniXCn4RFfwiKvhFhMEX8/G6gq/6tir4JXWePwZCuYkS7Bg7AAAAAElFTkSuQmCC" InformativeScreenshot="28bfe4e91de465edb06bb63c56f11764.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='Pdps301' title='Payroll Invoice Entry - ADD          ' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="243, 341, 12, 11" ElementType="Text" FriendlyName="'On'" FullSelectorArgument="&lt;wnd cls='Static' title='On' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='On' check:text='On' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABFSURBVDhPY/hPIRiEBjAwMMAxMQBFFbomYgwhygBkGkMNlAYDfAYgy6GwoTQY4DMAGQxiA0AAJAnDMECSAaSCIW/A//8AoOdczsoXyt0AAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Comments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="680,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Text="Demo using ui path" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="412, 245, 270, 16" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd aaname='Comments' cls='Edit' idx='2' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Comments' cls='Edit' /&gt;" Guid="97bcdcbf-c040-4c7b-ba80-a22a7de59404" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARIAAAAUCAYAAABBGbKKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABqSURBVHhe7dSxCYAwAABBh83+ZINYKVgIxm/v4Vb4Y0lSzEgk5e6RjDEAtlw9RjLnBPjESIDMSIDMSIDMSIDMSIDMSIDMSIDMSIDMSIDMSIDMSIDMSIDMSIDsdSQAO67ukUjS34xEUmytEwTFs7ODZnOMAAAAAElFTkSuQmCC" InformativeScreenshot="2112e4b00d53082f0726e93b860d021a.png" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='Pdps301' title='Payroll Invoice Entry - ADD          ' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="513, 233, 48, 11" ElementType="Text" FriendlyName="'Comments'" FullSelectorArgument="&lt;wnd cls='Static' title='Comments' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Comments' check:text='Comments' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAPCAYAAACrxeyFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACmSURBVEhL7Y9RDsMwCEM5bO5/haye6smQpDRVP7KqT0JgA1Gw+jDeg1anOcjMfrEKM39xk3FxlaNuO0hBj0FUn/EBe+rrbPRjkJ4HnIpN0izt+mom6mtvNEeOtOvEQTJ64EqOQV/JNNB9xTmjhzJ/Nkein2mlmd3zl9FDmT+bSeaTGe07G2gylJ7P+mwGqBlEaxA16O1ED7Sbf8570OpYKaU+J0r9AG7UXF6NQGlUAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text 'Batch No.'" sap:VirtualizedContainerService.HintSize="680,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" ScrapingMethod="Native" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CheckVisibility="True" DesignTimeRectangle="105, 170, 54, 16" ElementType="InputBox" FriendlyName="'08654158'" FullSelectorArgument="&lt;wnd cls='Edit' idx='16' /&gt;&lt;ctrl role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;&lt;ctrl role='editable text' automationid='' /&gt;" Guid="fe4d35c0-4b10-467f-8367-9be1df88e4d9" ImageBase64="" InformativeScreenshot="1a227db2d4af67b2b9339d1538f0d633.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='Pdps301' title='Payroll Invoice Entry - ADD          ' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="21, 172, 54, 11" ElementType="Text" FriendlyName="'Batch No.'" FullSelectorArgument="&lt;wnd cls='Static' title='Batch No.' /&gt;&lt;ctrl name='Batch No.' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Batch No.' /&gt;&lt;ctrl name='Batch No.' role='text' automationid='' check:text='Batch No.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAPCAYAAAC1DNw2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC2SURBVEhL7Y9bCgUhDEPd/6a9BG4gDWqrzJczB4p9pJG2/hK+Q28jHNpaC1Glqt3xBK7f3VfC5qnx0zoCve7s7ith0438EwbR3mpGmHt/xmwfcKa9FUGly2rgZqc1Xp25ztG90UsyHxAUKwPkGkpWk6qOcD57SeYDgmJmkBlX60zn6Bz5qQ8IiplBZlytM52jc+RVH69B6NCMoaxmwPsjrebAa2elR85whr3/ez3fobfxkkN7/wHzkCeCPn5tSAAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[batchNumber]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="680,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1" />
+            <uix:NGetText DisplayName="Get Text 'This client'" sap:VirtualizedContainerService.HintSize="680,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="70, 54, 318, 93" ElementType="Text" FriendlyName="'This client'" FullSelectorArgument="&lt;wnd ctrlid='65535' title='This client has multiple billing states. Do you want to change i*' /&gt;&lt;ctrl name='This client has multiple billing states. Do you want to change i*' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='65535' title='This client has multiple billing states. Do you want to change i*' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="c1514755-f4f0-4a3a-ba63-9ccea50b085f" InformativeScreenshot="0ace35eb59faafb8bf159d602a24d0c6.png" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='#32770' title='Payroll Invoice Entry' /&gt;" SearchSteps="FuzzySelector" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[multiple]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <If Condition="[multiple.Contains(text)]" sap:VirtualizedContainerService.HintSize="680,428" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="328, 177, 75, 23" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='7' title='&amp;amp;No' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='7' title='&amp;amp;No' check:text='unchecked' /&gt;" Guid="6b834f65-066d-4026-abd6-df53a744dbc9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAbCAYAAAA9K9JnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEMSURBVGhD7ZXBDYUgEAWpino4eLES2vBOLzRhA3TAZzEoKhLQfFnikkyQdYnJ5CHMGGOJe5C8B6zyhmEgCknKo5Ef4zjm5c3zTCSYpqlMXqgRG9XyGGM0uxmokhdv/DLBAx3bByBNnrLCfYsJdahxK3Xc1wbkyVtEcR7LwiMvgDh5TpSSTqC0Oq7tZLp0et6V2kXyQIgSzAq1r0EP1LnUS78Slq2S3wN38rwo9+zFHGq7tB3X/6Wb5MFaS/f/kxKNvEAHydvW8QXS8th2lTwPCDoJbXNhBJAmDzeok7ek6ZrUnhZQ8m4QPFQnL2z8+gwgvTD6oEgeNBFpsvLgJZHnUh5RxkkeUQ/Ju42xPxxCPEKc9zOEAAAAAElFTkSuQmCC" InformativeScreenshot="8634a3487cc1a5cbde395baa1f2caf5d.png" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='#32770' title='Payroll Invoice Entry' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="242,84" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="680,156" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f012ba56-8c4f-4f1a-a5be-26f6e7019271" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="151, 151, 75, 23" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='6' title='&amp;amp;Yes' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='6' title='&amp;amp;Yes' check:text='unchecked' /&gt;" Guid="84f1cbe9-3832-4073-bb91-90fd7bdc540d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAbCAYAAAA9K9JnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAECSURBVGhD7dXNDYQgEIZhqqKeOXixEtrwTi80YQN0MCuCin/ElUTH5DN5si5L9vCGUeW9Z7gH8SrM8ZqmgYsO4+EqX23bluP1fQ8Huq67Fm9agwXiVUC8CohXQVw8S4rJpu/OsNaG3WaPFPJOniVWZMd7ZzRr4/Z7hBA4tpZJaTbOsdHhc1pTrIIUNghxxzVFbFf/8QyRz7zxxBENYqhllLdB34k2kfnCCM+64UTFYNmpS5aQ65P4NJnx5tHd3u/F0cXYZvJg8YSdvzjyUX7WB+IN0hivXw7ZOL80ukLjfQPiVUC8CohXAfEqXIoXNsGxYrzwI5SdxoNrdvHgf4h3m+cfP8k6OBUyIvgAAAAASUVORK5CYII=" InformativeScreenshot="4465b58edc8fa5368043627547065553.png" ScopeSelectorArgument="&lt;wnd app='pdps301.exe' cls='#32770' title='Payroll Invoice Entry' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="680,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Batch Number : &quot;+batchNumber]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680,254" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,176" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[batchNumber]" />
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\EP\BIN32\pdps301.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJJSURBVFhHrZMxbhVBEES/xAmwuAX4Cg65AMiBEVewT0HmAEFi+Q5YIrAIfAYHOHBskXEHrGVea2tUM7/3//3eDUrdMztTXV09u3ke/g1r4+nvn+Hn7+vh4sf7QHZGWFUAhVUUAeyR390/bp0VFgvwooA10HeESEyGRQJksxekW+9YArXusViAd0fhL78etkT0Ih2LR+DdUXRzcTN8+nYbUftySmvHKgK8O4rjAujP+VpY5RH2j6wvDqbGsFgAgBz7+wJ6B3oTn89Paq5viwRszq6mUd5AEy3XGwlkxHNRSQ8EToG4nxHPRUaeoem4FK32ryFA5B4dtbBBj3SRgGqhEX84/Vi7+/71ssZeyKoOCP0f8O74bUTNm64l+CAHemLfj+KFhA7VsXD05nWz5rvE7nUgyF9tGuiSQwIykXJA4EyMopzfK4CCREhEREdeKERCUET03fMWMtEaQzOCsGbskmJcVlFyQK5vIqsEBS6MouJzYeynDniB2BwvZ9gSMI5AhCqejQSkAriAvR5ViJjlQhAUERD333rwPQQX7HSANTmHiMr7Vw1ECNFU19qP+Y/n0zeg7lVUa+05IXeIkIWtowhyzd2jrJeAdAS7IAFhowly0opRiJCdaRyYI0BOCFWAkUYxW+9C6oBsnwPOMoJDijpSBxTnYGoELkh5JnLLAQcFsj3NXwJe7EAp2gjgleqlKs/ABS7qN3UHpoT4vufNCEgySGUGuo/fcBTgmONK40BPfggyAXtR7uBACF0iAAfoBLKX4u7+cfgPaYsw8O5byBUAAAAASUVORK5CYII=" InformativeScreenshot="2981b4b6b03dc556812b9bdb7dd7ad48.png" Selector="&lt;wnd app='pdps301.exe' cls='Pdps301' title='Payroll Invoice Entry - ADD          '/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
